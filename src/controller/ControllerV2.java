@@ -102,12 +102,7 @@ public class ControllerV2 {
 			case View2.DRAMA_TICKETTING:
 				view = dramaService.dramaTicketing();
 				break;
-			case View2.DRAMA_REVIEW:
-				view = dramaService.dramaReview();
-				break;
-			case View2.DRAMA_REFUND:
-				view = dramaService.ticketRefund();
-				break;
+		
 
 			case View2.REVIEW:
 				view = reviewService.showReview();

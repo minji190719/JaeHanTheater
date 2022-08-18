@@ -68,10 +68,10 @@ public class UserDAO {
 		return result;
 	}
 
-	public Map<String, Object> showUserBoard() {
+	public List<Map<String, Object>> showUserBoard() {
 		Object userNick = ControllerV2.userInfo.get("USER_NICK");
 		sql = " SELECT * FROM BOARD WHERE BOARD_NICK='" + userNick + "' ";
-		Map<String, Object> row = jdbc.selectOne(sql);
+		List<Map<String, Object>> row = jdbc.selectList(sql);
 		return row;
 	}
 
